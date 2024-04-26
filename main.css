@@ -5,96 +5,60 @@
 }
 
 body {
-    width: 100%;
-    min-height: 100vh;
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    backdrop-filter: blur(5px);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-button{
-    display: block;
-    background-color: rebeccapurple;
-    color: #fff;
-    font-size: 1.2rem;
-    width: 100%;
-    outline: none;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    padding-block: 14px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-/* Styling the h1 element */
-
-h1 {
-    margin-top: 50px;
-    margin-bottom: -20px;
-    font-weight: 500;
-}
-
-
-/* Styling the Form (Color, Padding, Shadow) */
-
-form {
+.profile-card {
     background-color: #fff;
-    max-width: 500px;
-    margin: 50px auto;
-    padding: 30px 20px;
-    border-radius: 4px;
-    border-block: 5px solid rebeccapurple;
-    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 270px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: 1px solid darkred;
 }
 
-/* Styling form-control Class */
-
-.form-control {
-    text-align: left;
-    margin-bottom: 25px;
+.profile-picture {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    overflow: hidden;
+    outline: 1px solid darkred;
 }
 
-
-/* Styling form-control Label */
-
-.form-control label {
-    display: block;
-    margin-bottom: 10px;
+.profile-picture img {
+    width: 100%;
+    height: auto;
 }
 
-
-/* Styling form-control input, select, textarea */
-
-.form-control input:focus {
-    border: 2px solid rebeccapurple;
+.name {
+    font-size: 20px;
+    margin-bottom: 5px;
 }
 
-.form-control input,
-.form-control select,
-.form-control textarea {
-    border: 1px solid #777;
-    border-radius: 2px;
-    font-family: inherit;
-    padding: 10px;
-    display: block;
-    width: 95%;
-    outline: none;
+.job-title {
+    background-color: darkred;
+    color: #ccc;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-bottom: 15px;
 }
 
-.form-control select {
-    width: 98%;
-}
-
-/* Styling form-control Radio button and Checkbox */
-
-.form-control input[type="radio"],
-.form-control input[type="checkbox"] {
-    display: inline-block;
-    width: auto;
+.description {
+    text-align: center;
+    line-height: 1.5;
 }
